@@ -4,8 +4,6 @@ linters-settings:
   funlen:
     lines: 65
     statements: 45
-  gci:
-    local-prefixes: github.com/golangci/golangci-lint
   goconst:
     min-len: 4
     min-occurrences: 2
@@ -20,15 +18,12 @@ linters-settings:
       - whyNoLint
   gocyclo:
     min-complexity: 20
-  goimports:
-    local-prefixes: github.com/golangci/golangci-lint
   mnd:
     settings:
       mnd:
         # do not include the "operation" and "assign"
         checks: argument,case,condition,return
   govet:
-    check-shadowing: true
     settings:
       printf:
         funcs:
